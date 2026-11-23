@@ -81,7 +81,7 @@ def clear_Terminal():
     else:
         os.system('clear')
 
-def begining():
+def beginning():
     penup()
     color("#000000")
     home()
@@ -95,7 +95,7 @@ def set_Up():
     pensize(2.5)
     speed(0)
     hideturtle()
-    begining()
+    beginning()
 
 def draw_Lines():
     color("#972121")
@@ -109,7 +109,7 @@ def draw_Lines():
         penup()
         x-=137.428571429
         goto(x, 425)
-    begining()
+    beginning()
 
 def flavor_Menu():
     penup()
@@ -124,7 +124,7 @@ def flavor_Menu():
         forward(240.5)
     color("#ffffff")
     end_fill()
-    begining()
+    beginning()
 
 def write_Flavor():
     color("#CE0303")
@@ -140,13 +140,13 @@ def write_Flavor():
             write(line, align="center", font=("Comic Sans MS", 10, "bold"))
             y -= 15
         y -= max(0, 27 - (len(lines) - 1) * 15)
-    begining()
+    beginning()
 
 def write_title():
     color("#ffffff")
     goto(0, 300)
-    write("Kandhyce Ice Cream Special!", align="center", font=("Comic Sans MS",32, "bold"))
-    begining()
+    write("Brianna Ice Cream Special!", align="center", font=("Comic Sans MS",32, "bold"))
+    beginning()
 
 def ice_cone():
     penup()
@@ -159,7 +159,7 @@ def ice_cone():
         right(120)
         forward(120)
     end_fill()
-    begining()
+    beginning()
 
 def ice_scoop(flavor, y):
     penup()
@@ -223,7 +223,7 @@ def pick_Flavor():
     write(f"Total sugars: {total_sugar} g", align="center", font=("Comic Sans MS", 16, "bold"))
     goto(x, 90)
     write(f"Total proteins: {total_prot} g", align="center", font=("Comic Sans MS", 16, "bold"))
-    begining()
+    beginning()
 
 def ice_cream_order():
     set_Up()
